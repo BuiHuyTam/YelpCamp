@@ -29,7 +29,7 @@ const userRoutes = require("./routes/users");
 const { date } = require("joi");
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const db = mongoose.connection;
 const dbUrl = process.env.DB_URL || 'mongodb://localhost:27017/yelp-camp';
 
@@ -160,5 +160,5 @@ app.use((err, req, res, next) => {
 });
 
 app.listen(port, (req, res) => {
-  console.log("Listening on port 3000");
+  console.log(`Listening on port ${port}`);
 });
