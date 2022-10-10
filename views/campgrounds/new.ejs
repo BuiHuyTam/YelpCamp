@@ -1,0 +1,48 @@
+<% layout('layouts/boilerplate') %>
+  <div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-md-6 offset-md-3">
+      <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+        <div class="mb-3">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" name="campground[title]" id="title" class="form-control" required />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="location" class="form-label">Location</label>
+          <input type="text" name="campground[location]" id="location" class="form-control" required />
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Campground Price</label>
+          <div class="input-group mb-3">
+            <span class="input-group-text">$</span>
+            <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" id="price"
+              name="campground[price]" required />
+            <span class="input-group-text">.00</span>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="formFileMultiple" class="form-label">Add images</label>
+          <input class="form-control" type="file" id="formFileMultiple" name="image" multiple>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description</label>
+          <textarea class="form-control" id="description" rows="3" name="campground[description]" required></textarea>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb3">
+          <button class="btn btn-success">Add campground</button>
+        </div>
+      </form>
+    </div>
+  </div>
