@@ -13,8 +13,8 @@ body {
 }
 
 .nav-link {
-  padding: 0.25rem 0;
-  margin-left: 2rem;
+  /* padding: 0.25rem 0; */
+  /* margin-left: 2rem; */
   color: white;
   border-bottom: 0.15rem solid transparent;
   /* font-weight: 700; */
