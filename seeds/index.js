@@ -11,7 +11,6 @@ db.once("open", () => {
 });
 
 const sample = (array) => array[Math.floor(Math.random() * array.length)];
-
 const seedDB = async () => {
   await Campground.deleteMany({});
   for (let i = 0; i < 500; i++) {
