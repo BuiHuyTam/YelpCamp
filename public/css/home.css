@@ -42,11 +42,14 @@ main h1{
   font-weight: bold;
 }
 
-@media (max-width: 426px){
+@media (max-width: 575.98px){
   main h1{
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
   main .lead{
-    font-size: 0.5rem;
+    font-size: 1rem;
+  }
+  .btn-responsive{
+    font-size: 70%;
   }
 }
