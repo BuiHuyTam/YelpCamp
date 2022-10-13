@@ -34,8 +34,8 @@ const seedDB = async () => {
           filename: 'YelpCamp/m4bl3fxonj0hj4vxzp5h'
         },
         {
-          url: 'https://res.cloudinary.com/jjred/image/upload/v1663573871/YelpCamp/osxgzf6ziymxrwk7bweh.jpg',
-          filename: 'YelpCamp/osxgzf6ziymxrwk7bweh'
+          url: 'https://res.cloudinary.com/jjred/image/upload/v1665584378/YelpCamp/knuvhymyuahadgrtqyyw.jpg',
+          filename: 'YelpCamp/knuvhymyuahadgrtqyyw'
         }
       ]
     });
@@ -46,3 +46,5 @@ const seedDB = async () => {
 seedDB().then(() => {
   mongoose.connection.close();
 });
+
+
