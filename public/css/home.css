@@ -38,9 +38,15 @@ body {
   text-shadow: none;
 }
 
+main h1{
+  font-weight: bold;
+}
 
-@media (max-width: 425px){
+@media (max-width: 426px){
   main h1{
+    font-size: 1.25rem;
+  }
+  main p{
     font-size: 1rem;
   }
 }
