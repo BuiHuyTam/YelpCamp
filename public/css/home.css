@@ -17,6 +17,7 @@ body {
 
 .navbar-brand{
   font-size: 1rem;
+  font-weight: bold;
 }
 
 .nav-link {
@@ -35,4 +36,11 @@ body {
 
 .btn-primary {
   text-shadow: none;
+}
+
+
+@media (max-width: 425px){
+  main h1{
+    font-size: 1rem;
+  }
 }
