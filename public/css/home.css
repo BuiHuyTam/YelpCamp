@@ -46,7 +46,7 @@ main h1{
   main h1{
     font-size: 1.25rem;
   }
-  main p{
+  main .lead{
     font-size: 0.5rem;
   }
 }
