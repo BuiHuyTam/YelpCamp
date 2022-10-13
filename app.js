@@ -2,8 +2,6 @@ if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
 }
 
-// mongodb+srv://our-first-user:<password>@cluster0.6snv3hw.mongodb.net/?retryWrites=true&w=majority
-
 const express = require("express");
 const path = require("path");
 const mongoose = require("mongoose");
@@ -17,6 +15,7 @@ const LocalStrategy = require('passport-local');
 const User = require('./models/user');
 const mongoSanitize = require('express-mongo-sanitize');
 const MongoDBStore = require("connect-mongo");
+
 //chua cai dat pakage helmet 
 // const helmet = require("helmet");
 
