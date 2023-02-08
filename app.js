@@ -129,7 +129,7 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.use((req, res, next) => {
+app.use( (req, res, next) => {
   if (!['/login', '/'].includes(req.originalUrl)) {
     req.session.returnTo = req.originalUrl;
   }
