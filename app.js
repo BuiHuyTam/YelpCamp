@@ -60,6 +60,7 @@ store.on("error", function (e) {
   console.log("SESSION STORE ERROR", e);
 })
 
+//Session 
 app.use(
   session({
     store,
@@ -75,6 +76,7 @@ app.use(
     },
   })
 );
+
 app.use(flash());
 
 // app.use(helmet());
